@@ -1,6 +1,6 @@
 import { zeroAddress, type Address } from 'viem'
 
-const deployedAddress = ''
+const deployedAddress = '0xaFd53444c303048105b52540967e8195E3302b81'
 const configuredAddress = import.meta.env.VITE_GRIDSAIL_CONTRACT_ADDRESS
 const activeAddress = configuredAddress || deployedAddress
 
@@ -38,20 +38,18 @@ export const gridsailAbi = [
     type: 'function',
     name: 'statsOf',
     inputs: [{ name: 'user', type: 'address' }],
-    outputs: [
-      {
-        name: 'stats',
-        type: 'tuple',
-        components: [
-          { name: 'totalMoves', type: 'uint64' },
-          { name: 'totalDocks', type: 'uint32' },
-          { name: 'lastActiveDay', type: 'uint64' },
-          { name: 'todayMoves', type: 'uint8' },
-          { name: 'lastDirection', type: 'uint8' },
-          { name: 'lastSailedAt', type: 'uint64' },
-        ],
-      },
-    ],
+    outputs: [{
+      name: 'stats',
+      type: 'tuple',
+      components: [
+        { name: 'totalMoves', type: 'uint64' },
+        { name: 'totalDocks', type: 'uint32' },
+        { name: 'lastActiveDay', type: 'uint64' },
+        { name: 'todayMoves', type: 'uint8' },
+        { name: 'lastDirection', type: 'uint8' },
+        { name: 'lastSailedAt', type: 'uint64' },
+      ],
+    }],
     stateMutability: 'view',
   },
   {
