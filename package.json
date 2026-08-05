@@ -1,0 +1,31 @@
+{
+  "name": "gridsail",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@base-org/account": "^2.5.7",
+    "@tanstack/react-query": "^5.83.0",
+    "lucide-react": "^0.468.0",
+    "ox": "^0.9.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.55.7",
+    "wagmi": "^2.19.5"
+  },
+  "overrides": {
+    "@base-org/account": "^2.5.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.19"
+  }
+}
