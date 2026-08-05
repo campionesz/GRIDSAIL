@@ -5,7 +5,7 @@ import { base } from 'wagmi/chains'
 import { baseAccount, injected } from 'wagmi/connectors'
 
 export const BUILDER_CODE =
-  import.meta.env.VITE_BUILDER_CODE || 'bc_replace_me'
+  import.meta.env.VITE_BUILDER_CODE || 'bc_tnwe7a34'
 
 export const DATA_SUFFIX = Attribution.toDataSuffix({
   codes: [BUILDER_CODE],
